@@ -66,46 +66,6 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
-  Widget _buildOfferCard() {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 10),
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.deepPurple.shade100,
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: const Text(
-        "Special Offer - 50% OFF!",
-        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-      ),
-    );
-  }
+ 
 
-  // 🔹 كارت مطعم
-  Widget _buildRestaurantCard(String name, String type) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 10),
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.grey.shade100,
-        borderRadius: BorderRadius.circular(15),
-        border: Border.all(color: Colors.grey.shade300),
-      ),
-      child: Row(
-        children: [
-          const Icon(Icons.restaurant_menu, color: Colors.deepPurple, size: 40),
-          const SizedBox(width: 15),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(name,
-                  style: const TextStyle(
-                      fontSize: 18, fontWeight: FontWeight.bold)),
-              Text(type, style: const TextStyle(color: Colors.grey)),
-                ],
-          )
-        ],
-      ),
-    );
-  }
-}
+
